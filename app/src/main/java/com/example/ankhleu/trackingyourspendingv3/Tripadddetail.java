@@ -26,7 +26,7 @@ public class Tripadddetail extends AppCompatActivity {
     EditText ed1,ed2; //金額 註記
     Spinner sp1,sp2; //項目 幣別
     private int mYear, mMonth, mDay;//時間單位
-    public String time ;
+    public static String time ;
 
     public void time(String time)
     {
