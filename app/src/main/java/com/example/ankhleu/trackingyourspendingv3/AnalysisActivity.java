@@ -35,24 +35,24 @@ public class AnalysisActivity extends AppCompatActivity {
 
 ////////////////////////////////////////////////////////↓設資料，val為值，以下加總為100%，加總非100會算比例
         ArrayList<Entry> yvalues = new ArrayList<Entry>();
-        yvalues.add(new Entry(8f, 0));
-        yvalues.add(new Entry(15f, 1));
-        yvalues.add(new Entry(12f, 2));
-        yvalues.add(new Entry(25f, 3));
-        yvalues.add(new Entry(23f, 4));
-        yvalues.add(new Entry(17f, 5));
+        yvalues.add(new Entry(60f, 0));
+        yvalues.add(new Entry(10f, 1));
+        yvalues.add(new Entry(20f, 2));
+        yvalues.add(new Entry(5f, 3));
+        yvalues.add(new Entry(5f, 4));
+       // yvalues.add(new Entry(17f, 5));
 
         PieDataSet dataSet = new PieDataSet(yvalues, "Election Results");
 
 ////////////////////////////////////////////////////////↓設各個數值的名稱
         ArrayList<String> xVals = new ArrayList<String>();
 
-        xVals.add("January");
-        xVals.add("February");
-        xVals.add("March");
-        xVals.add("April");
-        xVals.add("May");
-        xVals.add("June");
+        xVals.add("餐飲");
+        xVals.add("交通");
+        xVals.add("購物");
+        xVals.add("雜支");
+        xVals.add("其他");
+      //  xVals.add("June");
 
         PieData data = new PieData(xVals, dataSet);
 

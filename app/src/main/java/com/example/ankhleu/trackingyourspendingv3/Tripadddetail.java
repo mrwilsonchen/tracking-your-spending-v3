@@ -26,6 +26,12 @@ public class Tripadddetail extends AppCompatActivity {
     EditText ed1,ed2; //金額 註記
     Spinner sp1,sp2; //項目 幣別
     private int mYear, mMonth, mDay;//時間單位
+    public String time ;
+
+    public void time(String time)
+    {
+        this.time=time;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,7 +100,8 @@ public class Tripadddetail extends AppCompatActivity {
 
         int money = Integer.valueOf(ed1.getText().toString());
         String note = ed2.getText().toString();
-        String time = tv1.getText().toString();  //抓時間很奇怪
+        //String time = tv1.getText().toString();  //抓時間很奇怪
+        time = tv1.getText().toString();  //抓時間很奇怪
         String subject =sp1.getSelectedItem().toString();
         String Currency =sp2.getSelectedItem().toString();
 

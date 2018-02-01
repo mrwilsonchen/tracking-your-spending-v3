@@ -74,6 +74,9 @@ public class FragmentAnalysis extends Fragment {
             public void onClick(View view) {
                 Intent it3=new Intent(getActivity(),AnalysisActivity.class);
                 startActivity(it3);
+//                bt1.setVisibility(View.INVISIBLE);
+
+
             }
         });
 

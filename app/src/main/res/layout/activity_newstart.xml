@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="startime"
-                android:text="設定開始日期"
+                android:text="啟程日"
                 android:textSize="17sp" />
         </LinearLayout>
 
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="endtime"
-                android:text="設定結束日期"
+                android:text="返回日"
                 android:textSize="17sp" />
 
         </LinearLayout>

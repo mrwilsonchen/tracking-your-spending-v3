@@ -80,9 +80,9 @@ public class MainActivity extends AppCompatActivity {
 
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
-        fb1 = (FloatingActionButton)findViewById(R.id.floatingActionButton3);
-        fb2 = (FloatingActionButton)findViewById(R.id.floatingActionButton2);
-        fb3 = (FloatingActionButton)findViewById(R.id.floatingActionButton);
+//        fb1 = (FloatingActionButton)findViewById(R.id.floatingActionButton3);
+//        fb2 = (FloatingActionButton)findViewById(R.id.floatingActionButton2);
+//        fb3 = (FloatingActionButton)findViewById(R.id.floatingActionButton);
 
  /*       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<String>(MainActivity.this,
                 android.R.layout.simple_list_item_1,tripname);
         lv= findViewById(R.id.listview);
- //       lv.setAdapter(adapter);  //此處暫時註解，避免app無法運行，app可以運行但仍value傳不回listview
+//        lv.setAdapter(adapter);  //此處暫時註解，避免app無法運行，app可以運行但仍value傳不回listview
 
 
     }
