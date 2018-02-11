@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ankhleu.trackingyourspendingv3">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,10 +30,13 @@
         <activity android:name=".Tripadddetail" />
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings"></activity>
-        <activity android:name=".AnalysisActivity"/>
-        <activity android:name=".CalendarActivity"/>
-
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".AnalysisActivity" />
+        <activity android:name=".CalendarActivity" />
+        <activity
+            android:name=".photoActivity"
+            android:label="@string/title_activity_photo"
+            android:theme="@style/AppTheme.NoActionBar" />
 
     </application>
 

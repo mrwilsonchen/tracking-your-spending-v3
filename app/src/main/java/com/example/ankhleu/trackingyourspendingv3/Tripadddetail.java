@@ -26,11 +26,12 @@ public class Tripadddetail extends AppCompatActivity {
     EditText ed1,ed2; //金額 註記
     Spinner sp1,sp2; //項目 幣別
     private int mYear, mMonth, mDay;//時間單位
-    public static String time ;
+    public static String newtime="AAAA20180205";
+    //public static String  newtimew = "IMG_20180205_064446.jpg";   //...........
 
-    public void time(String time)
+    public void timeget(String newtime)
     {
-        this.time=time;
+        this.newtime=newtime;
     }
 
     @Override
@@ -101,11 +102,11 @@ public class Tripadddetail extends AppCompatActivity {
         int money = Integer.valueOf(ed1.getText().toString());
         String note = ed2.getText().toString();
         //String time = tv1.getText().toString();  //抓時間很奇怪
-        time = tv1.getText().toString();  //抓時間很奇怪
+        newtime = tv1.getText().toString();  //抓時間很奇怪
         String subject =sp1.getSelectedItem().toString();
         String Currency =sp2.getSelectedItem().toString();
 
-        MainActivity.dao2.add(new tripadd_constructor(time,money,subject,Currency,note));
+        MainActivity.dao2.add(new tripadd_constructor(newtime,money,subject,Currency,note));
         finish();
     }
     public void clickno(View v)

@@ -1,12 +1,18 @@
 package com.example.ankhleu.trackingyourspendingv3;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+
+import static com.example.ankhleu.trackingyourspendingv3.Tripadddetail.newtime;
 
 
 /**
@@ -17,7 +23,11 @@ import android.view.ViewGroup;
  * Use the {@link FragmentReceipt#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentReceipt extends Fragment {
+public class
+FragmentReceipt extends Fragment {
+
+    Button bt1;
+    TextView textView;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -65,6 +75,29 @@ public class FragmentReceipt extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_receipt, container, false);
+
+    }
+
+    @Override
+    public void onActivityCreated( Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        bt1=(Button)getActivity().findViewById(R.id.button5) ;
+        textView=(TextView)getActivity().findViewById(R.id.textView) ;
+        //textView.setText("123455");
+
+        textView.setText(Tripadddetail.newtime.substring(4,12));
+        //bt1.setText(Tripadddetail.newtime);
+        //bt1.setText("Hi abc");
+
+        bt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it5=new Intent(getActivity(),photoActivity.class);
+                startActivity(it5);
+            }
+        });
+
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
