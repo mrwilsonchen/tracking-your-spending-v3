@@ -36,7 +36,7 @@ import java.util.Calendar;
 public class MainActivity extends AppCompatActivity {
 
     public static tripDAO dao;//建立活動用
-    public static tripDetailDAO dao2;  //這是加資料用
+    public static tripDetailDAO dao2;  //這是加資料用1
     ListView lv;
     ArrayList<String> tripname;
     ArrayAdapter<String> adapter;
